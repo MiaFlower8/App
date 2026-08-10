@@ -1,7 +1,4 @@
-import streamlit as st
-
-st.title("P.article Bank")
-
+import json
 import os
 import sqlite3
 from datetime import datetime, timezone
@@ -682,5 +679,3 @@ for a in articles:
                 st.markdown(f"**vs. {item['compared_to_title']}** ({item['similarity'] * 100:.0f}% similar)")
                 st.markdown(item["what_is_different"])
                 st.markdown("---")
-
-    )
